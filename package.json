@@ -1,0 +1,30 @@
+{
+  "name": "minilux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo src/index.js:lib/index.js -v -d | garnish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "browserify": {
+    "transform": [
+      "babelify",
+      "brfs"
+    ]
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "brfs": "^1.4.1",
+    "browserify": "^11.0.1",
+    "budo": "^4.2.1",
+    "garnish": "^2.3.0"
+  },
+  "dependencies": {
+    "fetch": "^0.3.6",
+    "immutable": "^3.7.5",
+    "react": "^0.13.3"
+  }
+}
